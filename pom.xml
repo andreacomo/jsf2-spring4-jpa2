@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>it.cosenonjaviste</groupId>
+  <artifactId>jsf2-spring4-jpa2-archetype</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>maven-archetype</packaging>
+
+  <name>jsf2-spring4-jpa2-archetype</name>
+
+  <build>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.archetype</groupId>
+        <artifactId>archetype-packaging</artifactId>
+        <version>2.2</version>
+      </extension>
+    </extensions>
+
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-archetype-plugin</artifactId>
+          <version>2.2</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  <description>This archetype is based on org.fluttercode.knappsack/spring-jsf-jpa-archetype/1.1 one.
+This new archetype upgrade libraries to JSF 2.2, Spring 4 and JPA 2.1</description>
+
+  <url>http://www.cosenonjaviste.it</url>
+
+  <developers>
+    <developer>
+      <id>acomo</id>
+      <name>Andrea Como</name>
+      <email>info@cosenonjaviste.it</email>
+      <url>https://bitbucket.org/cosenonjaviste</url>
+    </developer>
+  </developers>
+
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:git:https://bitbucket.org/cosenonjaviste/jsf2-spring4-jpa2-archetype.git</connection>
+    <developerConnection>scm:git:https://bitbucket.org/cosenonjaviste/jsf2-spring4-jpa2-archetype.git</developerConnection>
+    <url>https://bitbucket.org/cosenonjaviste/jsf2-spring4-jpa2-archetype</url>
+  </scm>
+
+  <distributionManagement>
+    <repository>
+      <id>sonatype-nexus-staging</id>
+      <name>Nexus Release Repository</name>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+    <snapshotRepository>
+      <id>sonatype-nexus-snapshots</id>
+      <name>Sonatype Nexus Snapshots</name>
+      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+</project>

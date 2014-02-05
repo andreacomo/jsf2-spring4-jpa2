@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
+	<groupId>${groupId}</groupId>
+	<artifactId>${artifactId}</artifactId>
+	<version>${version}</version>
+	<packaging>pom</packaging>
+	<description>This archetype is based on org.fluttercode.knappsack/spring-jsf-jpa-archetype/1.1 one.
+This new archetype upgrade libraries to JSF 2.2, Spring 4 and JPA 2.1</description>
+	<name>JSF2 Spring4 JPA2 Archetype</name>
+	<scm>
+		<url>https://bitbucket.org/cosenonjaviste/jsf2-spring4-jpa2-archetype</url>
+		<connection>scm:git:https://bitbucket.org/cosenonjaviste/jsf2-spring4-jpa2-archetype.git</connection>
+		<developerConnection>scm:git:https://bitbucket.org/cosenonjaviste/jsf2-spring4-jpa2-archetype.git</developerConnection>
+	</scm>
+	<url>http://www.cosenonjaviste.it</url>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<id>acomo</id>
+			<name>Andrea Como</name>
+			<email>info@cosenonjaviste.it</email>
+			<url>https://bitbucket.org/cosenonjaviste</url>
+		</developer>
+	</developers>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring.version>4.0.1.RELEASE</spring.version>
+		<slf4j.version>1.5.10</slf4j.version>
+		<java.version>1.7</java.version>
+		<junit.version>4.11</junit.version>
+
+		<jsf.version>2.2.5</jsf.version>
+		<hibernate.validator.version>5.0.2.Final</hibernate.validator.version>
+		<entitymanager.version>4.3.1.Final</entitymanager.version>
+		<commons.collections.version>3.1</commons.collections.version>
+		<hsqldb.version>2.3.1</hsqldb.version>
+		<tomcat.dbcp>7.0.41</tomcat.dbcp>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>${groupId}</groupId>
+				<artifactId>${rootArtifactId}-services</artifactId>
+				<version>${version}</version>
+				<type>jar</type>
+			</dependency>
+
+			<!-- JSF Dependencies -->
+
+			<dependency>
+				<groupId>com.sun.faces</groupId>
+				<artifactId>jsf-api</artifactId>
+				<version>${jsf.version}</version>
+				<scope>runtime</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.sun.faces</groupId>
+				<artifactId>jsf-impl</artifactId>
+				<version>${jsf.version}</version>
+				<scope>runtime</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-log4j12</artifactId>
+				<version>${slf4j.version}</version>
+				<scope>runtime</scope>
+			</dependency>
+
+			<!-- JPA Persistence Dependencies -->
+
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-entitymanager</artifactId>
+				<version>${entitymanager.version}</version>
+				<scope>compile</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>commons-collections</groupId>
+				<artifactId>commons-collections</artifactId>
+				<version>${commons.collections.version}</version>
+				<scope>compile</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.hsqldb</groupId>
+				<artifactId>hsqldb</artifactId>
+				<version>${hsqldb.version}</version>
+			</dependency>
+
+			<!-- Spring Dependencies -->
+
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-context</artifactId>
+				<version>${spring.version}</version>
+				<exclusions>
+					<!-- Exclude Commons Logging in favor of SLF4j -->
+					<exclusion>
+						<groupId>commons-logging</groupId>
+						<artifactId>commons-logging</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-orm</artifactId>
+				<version>${spring.version}</version>
+				<type>jar</type>
+				<scope>compile</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-web</artifactId>
+				<version>${spring.version}</version>
+				<type>jar</type>
+				<scope>compile</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-test</artifactId>
+				<version>${spring.version}</version>
+				<type>jar</type>
+				<scope>test</scope>
+			</dependency>
+
+			<!-- DB Dependencies -->
+
+			<dependency>
+				<groupId>org.apache.tomcat</groupId>
+				<artifactId>tomcat-dbcp</artifactId>
+				<version>${tomcat.dbcp}</version>
+				<scope>runtime</scope>
+			</dependency>
+
+
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<plugins>
+
+			<!-- Ensures we are compiling at 1.7 level -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+</project>

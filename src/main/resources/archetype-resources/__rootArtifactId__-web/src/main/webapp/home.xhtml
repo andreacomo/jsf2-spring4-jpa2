@@ -1,0 +1,39 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:jsf="http://xmlns.jcp.org/jsf"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+	template="/WEB-INF/templates/template.xhtml">
+	<ui:define name="content">
+		<h1><h:outputText value="Hello From JSF" /></h1>
+		Message : ${symbol_pound}{homeBean.message}<br />
+		<br />
+		<h2>Tasks</h2>
+		<table>
+			<ui:repeat value="${symbol_pound}{taskBB.tasks}" var="v_task">
+				<tr>
+					<td>${symbol_pound}{v_task.id}</td>
+					<td>${symbol_pound}{v_task.description}</td>
+				</tr>
+			</ui:repeat>
+		</table>
+
+		<h:form>
+			<div jsf:id="wrapper"
+				style="border-top: 1px solid ${symbol_pound}d0d0d0; margin-top: 12px; padding-top: 12px">
+				<h:inputText value="${symbol_pound}{taskBB.task.description}" id="taskDesc" p:placeholder="Type a task ID" maxlength="48" required="true" label="Task">
+					<f:validateLength maximum="48"/>
+				</h:inputText>
+				<h:commandButton action="${symbol_pound}{taskBB.saveTask}" value="Add" />
+				<h:message for="taskDesc" style="color : red;padding-left : 8px"/>
+			</div>
+
+		</h:form>
+		
+	</ui:define>
+</ui:composition>
