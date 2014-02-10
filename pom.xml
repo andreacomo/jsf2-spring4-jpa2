@@ -9,6 +9,10 @@
 
 	<name>jsf2-spring4-jpa2-archetype</name>
 
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
 	<build>
 
 		<extensions>
