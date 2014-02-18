@@ -4,7 +4,7 @@
 
 	<groupId>it.cosenonjaviste</groupId>
 	<artifactId>jsf2-spring4-jpa2-archetype</artifactId>
-	<version>1.0.3</version>
+	<version>1.0.4-SNAPSHOT</version>
 	<packaging>maven-archetype</packaging>
 
 	<name>jsf2-spring4-jpa2-archetype</name>
