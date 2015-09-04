@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>it.cosenonjaviste</groupId>
 	<artifactId>jsf2-spring4-jpa2-archetype</artifactId>
-	<version>2.0.0-SNAPSHOT</version>
+	<version>2.0.0</version>
 	<packaging>maven-archetype</packaging>
 
 	<name>jsf2-spring4-jpa2-archetype</name>
@@ -39,7 +38,8 @@ This new archetype upgrade libraries to JSF 2.2, Spring 4 and JPA 2.1</descripti
 		<connection>scm:git:https://github.com/andreacomo/jsf2-spring4-jpa2.git</connection>
 		<developerConnection>scm:git:https://github.com/andreacomo/jsf2-spring4-jpa2.git</developerConnection>
 		<url>https://github.com/andreacomo/jsf2-spring4-jpa2</url>
-	</scm>
+	  <tag>jsf2-spring4-jpa2-archetype-2.0.0</tag>
+  </scm>
 
 	<distributionManagement>
 		<snapshotRepository>
