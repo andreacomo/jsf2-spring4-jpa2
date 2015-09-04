@@ -29,14 +29,14 @@
 		</property>		
 	</bean>
 
-	<bean id="dataSource" class="org.apache.tomcat.dbcp.dbcp.BasicDataSource"
+	<bean id="dataSource" class="org.apache.tomcat.dbcp.dbcp2.BasicDataSource"
 		destroy-method="close">
 		<property name="driverClassName" value="${symbol_dollar}{db.driver}" />
 		<property name="url" value="${symbol_dollar}{db.url}" />
 		<property name="username" value="${symbol_dollar}{db.username}" />
 		<property name="password" value="${symbol_dollar}{db.password}" />
 		<property name="initialSize" value="${symbol_dollar}{db.initialSize}" />
-		<property name="maxActive" value="${symbol_dollar}{db.maxActive}" />
+		<property name="maxTotal" value="${symbol_dollar}{db.maxActive}" />
 	</bean>
 
 	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">

@@ -37,17 +37,17 @@ This new archetype upgrade libraries to JSF 2.2, Spring 4 and JPA 2.1</descripti
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring.version>4.0.1.RELEASE</spring.version>
+		<spring.version>4.2.1.RELEASE</spring.version>
 		<slf4j.version>1.5.10</slf4j.version>
-		<java.version>1.7</java.version>
-		<junit.version>4.11</junit.version>
+		<java.version>1.8</java.version>
+		<junit.version>4.12</junit.version>
 
-		<jsf.version>2.2.5</jsf.version>
+		<jsf.version>2.2.12</jsf.version>
 		<hibernate.validator.version>5.0.2.Final</hibernate.validator.version>
-		<entitymanager.version>4.3.1.Final</entitymanager.version>
+		<entitymanager.version>5.0.1.Final</entitymanager.version>
 		<commons.collections.version>3.1</commons.collections.version>
 		<hsqldb.version>2.3.1</hsqldb.version>
-		<tomcat.dbcp>7.0.41</tomcat.dbcp>
+		<tomcat.dbcp>8.0.26</tomcat.dbcp>
 	</properties>
 
 	<dependencyManagement>
