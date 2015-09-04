@@ -1,39 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>org.sonatype.oss</groupId>
-		<artifactId>oss-parent</artifactId>
-		<version>7</version>
-	</parent>
 	<groupId>${groupId}</groupId>
 	<artifactId>${artifactId}</artifactId>
 	<version>${version}</version>
 	<packaging>pom</packaging>
-	<description>This archetype is based on org.fluttercode.knappsack/spring-jsf-jpa-archetype/1.1 one.
-This new archetype upgrade libraries to JSF 2.2, Spring 4 and JPA 2.1</description>
-	<name>JSF2 Spring4 JPA2 Archetype</name>
-	<scm>
-		<url>https://bitbucket.org/cosenonjaviste/jsf2-spring4-jpa2-archetype</url>
-		<connection>scm:git:https://bitbucket.org/cosenonjaviste/jsf2-spring4-jpa2-archetype.git</connection>
-		<developerConnection>scm:git:https://bitbucket.org/cosenonjaviste/jsf2-spring4-jpa2-archetype.git</developerConnection>
-	</scm>
-	<url>http://www.cosenonjaviste.it</url>
-	<licenses>
-		<license>
-			<name>The Apache Software License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
-	<developers>
-		<developer>
-			<id>acomo</id>
-			<name>Andrea Como</name>
-			<email>info@cosenonjaviste.it</email>
-			<url>https://bitbucket.org/cosenonjaviste</url>
-		</developer>
-	</developers>
+	<description></description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
