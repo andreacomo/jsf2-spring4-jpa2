@@ -2,7 +2,7 @@ repo_name: andreacomo/jsf2-spring4-jpa2
 report_id: 35f7110c72cfa0b3d441017a3f1ea597
 version: 0.1
 repo_type: Public
-timestamp: '2023-12-25T20:40:28+00:00'
+timestamp: '2024-01-05T08:15:28+00:00'
 requested_by: andreacomo
 provider: github
 branch: master
@@ -16,6 +16,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/andreacomo/jsf2-spring4-jpa2
   detection_source: Repo Metadata
 - name: Java
   description: A concurrent, class-based, object-oriented, language specifically designed
@@ -26,6 +27,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/995/K85ZWV2F.png
+  detection_source_url: https://github.com/andreacomo/jsf2-spring4-jpa2
   detection_source: Repo Metadata
 - name: HSQLDB
   description: Leading SQL relational database software written in Java
@@ -35,6 +37,7 @@ tools:
   category: Data Stores
   sub_category: Databases
   image_url: https://img.stackshare.io/service/6958/yQ4763oZ_400x400.jpg
+  detection_source_url: https://github.com/andreacomo/jsf2-spring4-jpa2/blob/master/src/main/resources/archetype-resources/__rootArtifactId__-services/pom.xml
   detection_source: src/main/resources/archetype-resources/__rootArtifactId__-services/pom.xml
   last_updated_by: andrea.como
   last_updated_on: 2014-02-05 09:45:34.000000000 Z
@@ -46,6 +49,7 @@ tools:
   category: Data Stores
   sub_category: Object Relational Mapper (ORM)
   image_url: https://img.stackshare.io/service/1756/1uNl_IZX.png
+  detection_source_url: https://github.com/andreacomo/jsf2-spring4-jpa2/blob/master/src/main/resources/archetype-resources/__rootArtifactId__-services/pom.xml
   detection_source: src/main/resources/archetype-resources/__rootArtifactId__-services/pom.xml
   last_updated_by: andrea.como
   last_updated_on: 2014-02-05 09:45:34.000000000 Z
@@ -57,6 +61,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/andreacomo/jsf2-spring4-jpa2
   detection_source: Repo Metadata
 - name: Log4j
   description: A Java-based logging utility
@@ -67,6 +72,7 @@ tools:
   category: Monitoring
   sub_category: Logging Tools
   image_url: https://img.stackshare.io/service/2804/Coralogix-log4j-integration.jpg
+  detection_source_url: https://github.com/andreacomo/jsf2-spring4-jpa2/blob/master/src/main/resources/archetype-resources/__rootArtifactId__-web/pom.xml
   detection_source: src/main/resources/archetype-resources/__rootArtifactId__-web/pom.xml
   last_updated_by: andrea.como
   last_updated_on: 2014-02-05 09:45:34.000000000 Z
@@ -78,6 +84,7 @@ tools:
   category: Monitoring
   sub_category: Log Management
   image_url: https://img.stackshare.io/service/2805/05518ecaa42841e834421e9d6987b04f_400x400.png
+  detection_source_url: https://github.com/andreacomo/jsf2-spring4-jpa2/blob/master/src/main/resources/archetype-resources/__rootArtifactId__-web/pom.xml
   detection_source: src/main/resources/archetype-resources/__rootArtifactId__-web/pom.xml
   last_updated_by: andrea.como
   last_updated_on: 2014-02-05 09:45:34.000000000 Z
@@ -90,6 +97,7 @@ tools:
   category: Libraries
   sub_category: Maven Packages
   image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/andreacomo/jsf2-spring4-jpa2/blob/master/src/main/resources/archetype-resources/__rootArtifactId__-web/pom.xml
   detection_source: src/main/resources/archetype-resources/__rootArtifactId__-web/pom.xml
   last_updated_by: andrea.como
   last_updated_on: 2014-02-05 09:45:34.000000000 Z
@@ -102,6 +110,7 @@ tools:
   category: Libraries
   sub_category: Maven Packages
   image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/andreacomo/jsf2-spring4-jpa2/blob/master/src/main/resources/archetype-resources/__rootArtifactId__-web/pom.xml
   detection_source: src/main/resources/archetype-resources/__rootArtifactId__-web/pom.xml
   last_updated_by: andrea.como
   last_updated_on: 2014-02-05 09:45:34.000000000 Z
@@ -113,6 +122,7 @@ tools:
   category: Libraries
   sub_category: Maven Packages
   image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/andreacomo/jsf2-spring4-jpa2/blob/master/src/main/resources/archetype-resources/__rootArtifactId__-services/pom.xml
   detection_source: src/main/resources/archetype-resources/__rootArtifactId__-services/pom.xml
   last_updated_by: andrea.como
   last_updated_on: 2014-02-05 09:45:34.000000000 Z
@@ -124,6 +134,7 @@ tools:
   category: Libraries
   sub_category: Maven Packages
   image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/andreacomo/jsf2-spring4-jpa2/blob/master/src/main/resources/archetype-resources/__rootArtifactId__-services/pom.xml
   detection_source: src/main/resources/archetype-resources/__rootArtifactId__-services/pom.xml
   last_updated_by: andrea.como
   last_updated_on: 2014-02-05 09:45:34.000000000 Z
@@ -135,6 +146,7 @@ tools:
   category: Libraries
   sub_category: Maven Packages
   image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/andreacomo/jsf2-spring4-jpa2/blob/master/src/main/resources/archetype-resources/__rootArtifactId__-services/pom.xml
   detection_source: src/main/resources/archetype-resources/__rootArtifactId__-services/pom.xml
   last_updated_by: andrea.como
   last_updated_on: 2014-02-05 09:45:34.000000000 Z
@@ -146,6 +158,7 @@ tools:
   category: Libraries
   sub_category: Maven Packages
   image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/andreacomo/jsf2-spring4-jpa2/blob/master/src/main/resources/archetype-resources/__rootArtifactId__-services/pom.xml
   detection_source: src/main/resources/archetype-resources/__rootArtifactId__-services/pom.xml
   last_updated_by: andrea.como
   last_updated_on: 2014-02-05 09:45:34.000000000 Z
@@ -157,6 +170,7 @@ tools:
   category: Libraries
   sub_category: Maven Packages
   image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/andreacomo/jsf2-spring4-jpa2/blob/master/src/main/resources/archetype-resources/__rootArtifactId__-web/pom.xml
   detection_source: src/main/resources/archetype-resources/__rootArtifactId__-web/pom.xml
   last_updated_by: andrea.como
   last_updated_on: 2014-02-05 09:45:34.000000000 Z
@@ -168,6 +182,7 @@ tools:
   category: Libraries
   sub_category: Maven Packages
   image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/andreacomo/jsf2-spring4-jpa2/blob/master/src/main/resources/archetype-resources/__rootArtifactId__-services/pom.xml
   detection_source: src/main/resources/archetype-resources/__rootArtifactId__-services/pom.xml
   last_updated_by: andrea.como
   last_updated_on: 2014-02-05 09:45:34.000000000 Z
@@ -179,6 +194,7 @@ tools:
   category: Libraries
   sub_category: Maven Packages
   image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/andreacomo/jsf2-spring4-jpa2/blob/master/src/main/resources/archetype-resources/__rootArtifactId__-services/pom.xml
   detection_source: src/main/resources/archetype-resources/__rootArtifactId__-services/pom.xml
   last_updated_by: andrea.como
   last_updated_on: 2014-02-05 09:45:34.000000000 Z
@@ -190,6 +206,7 @@ tools:
   category: Libraries
   sub_category: Maven Packages
   image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/andreacomo/jsf2-spring4-jpa2/blob/master/src/main/resources/archetype-resources/__rootArtifactId__-services/pom.xml
   detection_source: src/main/resources/archetype-resources/__rootArtifactId__-services/pom.xml
   last_updated_by: andrea.como
   last_updated_on: 2014-02-05 09:45:34.000000000 Z
@@ -201,6 +218,7 @@ tools:
   category: Libraries
   sub_category: Maven Packages
   image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/andreacomo/jsf2-spring4-jpa2/blob/master/src/main/resources/archetype-resources/__rootArtifactId__-web/pom.xml
   detection_source: src/main/resources/archetype-resources/__rootArtifactId__-web/pom.xml
   last_updated_by: andrea.como
   last_updated_on: 2014-02-05 09:45:34.000000000 Z
